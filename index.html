@@ -1,0 +1,413 @@
+<!doctype html>
+
+<html class="dark" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Mike Dawson | Product designer and strategist</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+            rel="stylesheet"
+        />
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#227a0c",
+                            "background-light": "#f5f6f8",
+                            "background-dark": "#101622",
+                        },
+                        fontFamily: {
+                            display: ["Inter", "sans-serif"],
+                        },
+                        borderRadius: {
+                            DEFAULT: "9999px",
+                            lg: "9999px",
+                            xl: "9999px",
+                            full: "9999px",
+                        },
+                    },
+                },
+            };
+        </script>
+        <script
+            src="components/header.js"
+            type="text/javascript"
+            defer
+        ></script>
+        <script
+            src="components/footer.js"
+            type="text/javascript"
+            defer
+        ></script>
+        <style>
+            body {
+                font-family: "Roboto", sans-serif;
+            }
+            .glass-nav {
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+            }
+        </style>
+    </head>
+    <body
+        class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 selection:bg-primary selection:text-white"
+    >
+        <!-- Top Navigation Bar -->
+        <header-component></header-component>
+        <main class="max-w-7xl mx-auto px-6 py-12">
+            <!-- Hero Section -->
+            <section class="relative overflow-hidden py-20 lg:py-32 px-6">
+                <div
+                    class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center"
+                >
+                    <div class="flex flex-col gap-8 z-10">
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 w-fit"
+                        >
+                            <span class="relative flex h-2 w-2">
+                                <span
+                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"
+                                ></span>
+                                <span
+                                    class="relative inline-flex rounded-full h-2 w-2 bg-primary"
+                                ></span>
+                            </span>
+                            <span
+                                class="text-xs font-bold uppercase tracking-wider"
+                                >Open to opportunities</span
+                            >
+                        </div>
+                        <h1
+                            class="text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-slate-900 dark:text-white"
+                        >
+                            Product designer <br />
+                            <span class="text-primary">&amp; strategist</span>
+                        </h1>
+                        <p
+                            class="text-lg lg:text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl"
+                        >
+                            Creating seamless digital experiences that bridge
+                            the gap between user needs and business goals
+                            through research-driven design.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a
+                                class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl text-base font-bold transition-all flex items-center gap-2 group shadow-xl shadow-primary/25"
+                                href="#projects"
+                            >
+                                View projects
+                                <span
+                                    class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                                    >arrow_forward</span
+                                >
+                            </a>
+                            <a
+                                class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-8 py-4 rounded-xl text-base font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-all"
+                                href="#about"
+                            >
+                                About me
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-transparent rounded-3xl blur-2xl opacity-30"
+                        ></div>
+                        <div
+                            class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-800 aspect-[4/3] bg-slate-100 dark:bg-slate-900"
+                            data-alt="Minimalist designer workspace with a high-end computer setup"
+                            style="
+                                background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBFEotvebaCfdQP4rIBh9YNZatgZu2IlxJmCEF1JGEqwa-p1tev4cW2QBiwAIhhkQJHfLVjMBRyPU9XIbVDHpkRI8roTyTNC5gCteWstfeo8dH-PAQWD_-9IEupoZhCgxdfXbdp8X3O4PDUw4kONiFUnP_ezCy5pf2O0KDGj2vft5sObXIwebR3an2WbfxGTVHRrpgjGgleEKdFc8cBlariw-TmYIGpiklDQzf9zxZj5SkNmNyA4DmAm5-SfuI2AIsXeNunz9mNEEDR&quot;);
+                                background-size: cover;
+                                background-position: center;
+                            "
+                        ></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Work Grid Section -->
+            <section
+                class="py-24 px-6 bg-white dark:bg-background-dark/50"
+                id="projects"
+            >
+                <div class="max-w-7xl mx-auto">
+                    <div
+                        class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16"
+                    >
+                        <div class="space-y-4">
+                            <h2 class="text-3xl font-bold tracking-tight">
+                                Selected projects
+                            </h2>
+                            <div
+                                class="h-1.5 w-20 bg-primary rounded-full"
+                            ></div>
+                        </div>
+                        <p class="text-slate-500 max-w-md">
+                            A showcase of design systems, mobile interfaces, and
+                            web experiences crafted with precision.
+                        </p>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Project 1 -->
+                        <a href="project01.html"
+                            ><div class="group cursor-pointer">
+                                <div
+                                    class="relative overflow-hidden rounded-2xl mb-6 bg-slate-100 dark:bg-slate-800 aspect-[16/10]"
+                                >
+                                    <div
+                                        class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity z-10 flex items-center justify-center"
+                                    >
+                                        <span
+                                            class="bg-white text-slate-900 px-6 py-2.5 rounded-full text-sm font-bold translate-y-4 group-hover:translate-y-0 transition-transform"
+                                            >View project</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                                        data-alt="UI design for an employee communications experience."
+                                        style="
+                                            background-image: url(&quot;images/project01/mobileThumbnail.webp&quot;);
+                                        "
+                                    ></div>
+                                </div>
+                                <h3
+                                    class="text-xl font-bold mb-2 group-hover:text-primary transition-colors"
+                                >
+                                    Employee communications experience
+                                </h3>
+                                <p
+                                    class="text-slate-500 dark:text-slate-400 font-medium"
+                                >
+                                    Mobile & web applications • 2022 - 2024
+                                </p>
+                            </div>
+                        </a>
+                        <!-- Project 2 -->
+                        <a href="project02.html"
+                            ><div class="group cursor-pointer">
+                                <div
+                                    class="relative overflow-hidden rounded-2xl mb-6 bg-slate-100 dark:bg-slate-800 aspect-[16/10]"
+                                >
+                                    <div
+                                        class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity z-10 flex items-center justify-center"
+                                    >
+                                        <span
+                                            class="bg-white text-slate-900 px-6 py-2.5 rounded-full text-sm font-bold translate-y-4 group-hover:translate-y-0 transition-transform"
+                                            >View project</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="w-full h-full bg-cover bg-top transition-transform duration-500 group-hover:scale-105"
+                                        data-alt="Clean mobile app screens showing health tracking metrics"
+                                        style="
+                                            background-image: url(&quot;images/project02/workflowsThumbnail.webp&quot;);
+                                        "
+                                    ></div>
+                                </div>
+                                <h3
+                                    class="text-xl font-bold mb-2 group-hover:text-primary transition-colors"
+                                >
+                                    Workflow builder
+                                </h3>
+                                <p
+                                    class="text-slate-500 dark:text-slate-400 font-medium"
+                                >
+                                    Web application • 2025
+                                </p>
+                            </div>
+                        </a>
+                        <!-- Project 3 -->
+                        <a href="project03.html"
+                            ><div class="group cursor-pointer">
+                                <div
+                                    class="relative overflow-hidden rounded-2xl mb-6 bg-slate-100 dark:bg-slate-800 aspect-[16/10]"
+                                >
+                                    <div
+                                        class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity z-10 flex items-center justify-center"
+                                    >
+                                        <span
+                                            class="bg-white text-slate-900 px-6 py-2.5 rounded-full text-sm font-bold translate-y-4 group-hover:translate-y-0 transition-transform"
+                                            >View project</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="w-full h-full bg-cover bg-top transition-transform duration-500 group-hover:scale-105"
+                                        data-alt="Elegant e-commerce store home page redesign"
+                                        style="
+                                            background-image: url(&quot;images/project03/eventTumbnail.jpg&quot;);
+                                        "
+                                    ></div>
+                                </div>
+                                <h3
+                                    class="text-xl font-bold mb-2 group-hover:text-primary transition-colors"
+                                >
+                                    Event builder module
+                                </h3>
+                                <p
+                                    class="text-slate-500 dark:text-slate-400 font-medium"
+                                >
+                                    Web application • 2026
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- About Section -->
+            <section class="py-24 px-6" id="about">
+                <div class="max-w-7xl mx-auto">
+                    <div class="grid lg:grid-cols-12 gap-16 items-center">
+                        <div class="lg:col-span-5 relative">
+                            <div
+                                class="aspect-square rounded-2xl overflow-hidden bg-slate-200 dark:bg-slate-800 shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+                            >
+                                <div
+                                    class="w-full h-full bg-cover bg-center"
+                                    data-alt="Portrait of product designer Mike Dawson in the outdoors"
+                                    style="
+                                        background-image: url(&quot;images/mikedawson.png&quot;);
+                                    "
+                                ></div>
+                            </div>
+                            <div
+                                class="absolute -bottom-6 -right-6 bg-primary text-white p-8 rounded-3xl hidden md:block"
+                            >
+                                <span class="text-4xl font-black block"
+                                    >8 +</span
+                                >
+                                <span
+                                    class="text-sm font-bold uppercase tracking-widest opacity-80"
+                                    >Years Exp.</span
+                                >
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7 flex flex-col gap-8">
+                            <div class="space-y-4">
+                                <h2 class="text-4xl font-bold tracking-tight">
+                                    About Me
+                                </h2>
+                                <div
+                                    class="h-1.5 w-16 bg-primary rounded-full"
+                                ></div>
+                            </div>
+                            <p
+                                class="text-xl leading-relaxed text-slate-700 dark:text-slate-300"
+                            >
+                                As a Senior User Experience &amp; Product
+                                Designer, I am currently leading the Design
+                                System project at Poppulo, creating scalable,
+                                usable systems that empower design teams.
+                            </p>
+                            <p
+                                class="text-lg leading-relaxed text-slate-500 dark:text-slate-400"
+                            >
+                                My work focuses on building advanced Figma
+                                components leveraging variables, variants, and
+                                properties for rapid prototyping. Additionally,
+                                I contribute to AI product offerings, delivering
+                                innovative solutions through close stakeholder
+                                alignment and research-driven design.
+                            </p>
+                            <div
+                                class="grid grid-cols-2 md:grid-cols-3 gap-6 pt-4"
+                            >
+                                <div class="flex flex-col gap-2">
+                                    <span
+                                        class="material-symbols-outlined text-primary"
+                                        >search</span
+                                    >
+                                    <span class="font-bold">UX Research</span>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <span
+                                        class="material-symbols-outlined text-primary"
+                                        >draw</span
+                                    >
+                                    <span class="font-bold">UI Design</span>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <span
+                                        class="material-symbols-outlined text-primary"
+                                        >bolt</span
+                                    >
+                                    <span class="font-bold">Prototyping</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact CTA Section -->
+            <section class="py-24 px-6 bg-primary" id="contact">
+                <div
+                    class="max-w-4xl mx-auto text-center flex flex-col items-center gap-10"
+                >
+                    <h2
+                        class="text-3xl md:text-5xl font-black text-white leading-tight"
+                    >
+                        Ready to build something together?
+                    </h2>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a
+                            href="mailto:mikedawsonmd@protonmail.com"
+                            target="_blank"
+                            ><button
+                                class="bg-white text-primary px-10 py-4 rounded-full text-lg font-bold hover:bg-slate-50 transition-all shadow-xl"
+                            >
+                                Email me
+                            </button>
+                        </a>
+                        <a
+                            href="files/MikeDawson+353879025857.pdf"
+                            target="_blank"
+                            download
+                        >
+                            <button
+                                class="bg-primary border-2 border-white text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-white/10 transition-all"
+                            >
+                                Download CV
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer-component></footer-component>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const themeToggleBtn = document.getElementById("theme-toggle");
+                const htmlElement = document.documentElement;
+
+                themeToggleBtn.addEventListener("click", () => {
+                    if (htmlElement.classList.contains("dark")) {
+                        htmlElement.classList.remove("dark");
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        htmlElement.classList.add("dark");
+                        localStorage.setItem("theme", "dark");
+                    }
+                });
+
+                // Check for saved theme preference
+                if (localStorage.getItem("theme") === "light") {
+                    htmlElement.classList.remove("dark");
+                }
+            });
+        </script>
+    </body>
+</html>

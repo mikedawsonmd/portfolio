@@ -1,0 +1,631 @@
+<!doctype html>
+
+<html class="dark" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Mike Dawson | Product designer and strategist</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+            rel="stylesheet"
+        />
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#227a0c",
+                            "background-light": "#f5f6f8",
+                            "background-dark": "#101622",
+                        },
+                        fontFamily: {
+                            display: ["Inter", "sans-serif"],
+                        },
+                        borderRadius: {
+                            DEFAULT: "9999px",
+                            lg: "9999px",
+                            xl: "9999px",
+                            full: "9999px",
+                        },
+                    },
+                },
+            };
+        </script>
+        <script
+            src="components/header.js"
+            type="text/javascript"
+            defer
+        ></script>
+        <script
+            src="components/footer.js"
+            type="text/javascript"
+            defer
+        ></script>
+        <style>
+            body {
+                font-family: "Roboto", sans-serif;
+            }
+            .glass-nav {
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+            }
+        </style>
+    </head>
+    <body
+        class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 selection:bg-primary selection:text-white"
+    >
+        <!-- Top Navigation Bar -->
+        <header-component></header-component>
+        <main class="max-w-7xl mx-auto px-6 py-12">
+            <!-- Breadcrumbs -->
+            <nav
+                class="flex items-center gap-2 mb-12 text-sm text-slate-500 dark:text-slate-400"
+            >
+                <a
+                    class="hover:text-primary transition-colors"
+                    href="index.html"
+                    >Home</a
+                >
+                <span class="material-symbols-outlined text-xs"
+                    >chevron_right</span
+                >
+                <a
+                    class="hover:text-primary transition-colors"
+                    href="index.html#projects"
+                    >Selected projects</a
+                >
+                <span class="material-symbols-outlined text-xs"
+                    >chevron_right</span
+                >
+                <span class="text-slate-900 dark:text-white font-medium"
+                    >EcoTrack Redesign</span
+                >
+            </nav>
+            <!-- Hero Section -->
+            <section class="grid lg:grid-cols-2 gap-12 items-center mb-24">
+                <div class="space-y-6">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider"
+                    >
+                        <span class="relative flex h-2 w-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"
+                            ></span>
+                            <span
+                                class="relative inline-flex rounded-full h-2 w-2 bg-primary"
+                            ></span>
+                        </span>
+                        Featured Case Study
+                    </div>
+                    <h1
+                        class="text-5xl lg:text-7xl font-black tracking-tight leading-[1.1]"
+                    >
+                        EcoTrack: Redefining Sustainable Shopping
+                    </h1>
+                    <p
+                        class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl"
+                    >
+                        A comprehensive mobile solution helping users track and
+                        reduce their carbon footprint through real-time purchase
+                        analysis and AI-driven sustainability scoring.
+                    </p>
+                    <div
+                        class="flex flex-wrap gap-8 py-4 border-y border-slate-200 dark:border-slate-800"
+                    >
+                        <div>
+                            <p
+                                class="text-xs uppercase text-slate-500 font-bold mb-1"
+                            >
+                                Role
+                            </p>
+                            <p class="font-medium">Lead UI/UX Designer</p>
+                        </div>
+                        <div>
+                            <p
+                                class="text-xs uppercase text-slate-500 font-bold mb-1"
+                            >
+                                Duration
+                            </p>
+                            <p class="font-medium">3 Months (2023)</p>
+                        </div>
+                        <div>
+                            <p
+                                class="text-xs uppercase text-slate-500 font-bold mb-1"
+                            >
+                                Tools
+                            </p>
+                            <p class="font-medium">Figma, Adobe CC, Notion</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 pt-4">
+                        <button
+                            class="bg-primary text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-primary/90 transition-all"
+                        >
+                            View Live Prototype
+                            <span class="material-symbols-outlined"
+                                >arrow_outward</span
+                            >
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full"
+                    ></div>
+                    <div
+                        class="relative rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-2xl"
+                    >
+                        <img
+                            class="w-full aspect-[4/3] object-cover"
+                            data-alt="Main product screen showing carbon footprint dashboard"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_eMl9HM1AMOw2qgbc6V22KcESljTwKLWCjrdPQJE5hMOavxOsp2j5FPgeNlQXE5Rqfh6Cx8I0JzqegDNGxcNUn5nbfbz7HvDhGys-jq3QWMA_JyP0RMUCNsmBZoG37096P_RRIUUZc3ICkA7nK0tx1SXwUNjbfz8Sx27AIpBi1xniUOHO32v7ovn9I-UabLKR271xLJDpCszHNztV9mPZUYHNyUmhuHiNLkerQV-cNC2PgUz9bvGseiLDKP4bquHDnekKnHyVOyyc"
+                        />
+                    </div>
+                </div>
+            </section>
+            <!-- Problem vs Solution -->
+            <section class="mb-32">
+                <h2 class="text-3xl font-bold mb-12 text-center">
+                    Understanding the Challenge
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div
+                        class="p-8 rounded-2xl bg-slate-800/50 border border-slate-700"
+                    >
+                        <div
+                            class="size-12 rounded-lg bg-red-500/10 text-red-500 flex items-center justify-center mb-6"
+                        >
+                            <span class="material-symbols-outlined text-3xl"
+                                >error</span
+                            >
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">The Problem</h3>
+                        <p
+                            class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6"
+                        >
+                            Users struggle to quantify the environmental impact
+                            of their daily shopping habits due to fragmented
+                            data and a lack of transparency in supply chains.
+                            Existing apps are too manual and time-consuming.
+                        </p>
+                        <div
+                            class="rounded-lg overflow-hidden border border-slate-200 dark:border-slate-800"
+                        >
+                            <img
+                                class="w-full h-48 object-cover opacity-60 grayscale"
+                                data-alt="Users struggling with complex paper receipts and spreadsheets"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtA0dKpBTa5Zhwkt3rb_FGF6z30-sTlyD0ZZPv1V0FaZdk-IB2VknycLnrlymCdFG87P71TqYeiEXmSWr-esV1kl1SINm8W_0Kvi7kWDdzwAnTwC3CXCJ7gFlMAymmHYduBa9l9yQJo6c4NkezRXzdw9VlPZ53Un9MFc_rn9bAUtntnUs1jCpoCW2aNVqeA-8-XHW-aumBScTmubjAt0VHDmAq6CtwX9rX51vr44JLu4OcAGc5z-1mT5If1d-cv8C0ki9kk5vG7qFk"
+                            />
+                        </div>
+                    </div>
+                    <div
+                        class="p-8 rounded-2xl bg-primary/5 border border-primary/20"
+                    >
+                        <div
+                            class="size-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-6"
+                        >
+                            <span class="material-symbols-outlined text-3xl"
+                                >check_circle</span
+                            >
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">The Solution</h3>
+                        <p
+                            class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6"
+                        >
+                            An integrated API-driven dashboard that categorizes
+                            purchases and provides actionable sustainability
+                            scores instantly, using machine learning to
+                            recommend eco-friendly alternatives.
+                        </p>
+                        <div
+                            class="rounded-lg overflow-hidden border border-primary/20 shadow-lg shadow-primary/5"
+                        >
+                            <img
+                                class="w-full h-48 object-cover"
+                                data-alt="Clean mobile app interface showing eco scores"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA64N-1SytRpI2L1UtmQHxI_03C4fk-U5Z7y3Zy4bn9zBEOJspwBZGcaglTBz6jPLhh9eWqHLE9po6UPLd_lEPfkuuPv3JTsoChHQfxUFm8z_x93QoMtn7_x12Qr6fJgBD-A1rx0ADdD_-kAQtmMXVvw-1SbBKBIheWJX23VEywN1bj05gchEfrJttHYjyrr3w8Y9yd63gntrTUlB0YfUt2_k58kGZNefFdyk9_IqIitzAaA6ZqM5cQLfWms8xvqmQikC5tc9WpyoLV"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- User Research Insights -->
+            <section class="mb-32">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl font-bold mb-4">
+                        User Research &amp; Insights
+                    </h2>
+                    <p class="text-slate-600 dark:text-slate-400">
+                        After interviewing 15 environmentally conscious
+                        shoppers, three key themes emerged that guided the
+                        entire design direction.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div
+                        class="p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/30"
+                    >
+                        <span
+                            class="text-primary text-4xl font-black mb-4 block opacity-50"
+                            >01</span
+                        >
+                        <h4 class="text-lg font-bold mb-3">
+                            Convenience is King
+                        </h4>
+                        <p
+                            class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed"
+                        >
+                            85% of users stop tracking after 3 days if they have
+                            to manually input data. Automation was
+                            non-negotiable for retention.
+                        </p>
+                    </div>
+                    <div
+                        class="p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/30"
+                    >
+                        <span
+                            class="text-primary text-4xl font-black mb-4 block opacity-50"
+                            >02</span
+                        >
+                        <h4 class="text-lg font-bold mb-3">
+                            Data Overload Paralysis
+                        </h4>
+                        <p
+                            class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed"
+                        >
+                            Users felt overwhelmed by raw CO2 numbers. They
+                            needed relative scores (e.g., "Good", "Average") to
+                            take action.
+                        </p>
+                    </div>
+                    <div
+                        class="p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/30"
+                    >
+                        <span
+                            class="text-primary text-4xl font-black mb-4 block opacity-50"
+                            >03</span
+                        >
+                        <h4 class="text-lg font-bold mb-3">
+                            Community Motivation
+                        </h4>
+                        <p
+                            class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed"
+                        >
+                            Users were 2x more likely to stick to sustainable
+                            habits when they could see the collective impact of
+                            their social circle.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Design Process -->
+            <section class="mb-32">
+                <h2 class="text-3xl font-bold mb-12">The Design Process</h2>
+                <div class="relative overflow-x-auto hide-scrollbar pb-8">
+                    <div class="flex gap-4 min-w-[900px]">
+                        <div class="flex-1 min-w-[200px] relative">
+                            <div
+                                class="h-1 bg-slate-200 dark:bg-slate-800 absolute top-4 left-0 right-0 z-0"
+                            ></div>
+                            <div class="relative z-10 space-y-4">
+                                <div
+                                    class="size-8 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold ring-8 ring-background-light dark:ring-background-dark"
+                                >
+                                    1
+                                </div>
+                                <h5 class="font-bold">Discovery</h5>
+                                <p class="text-xs text-slate-500">
+                                    Stakeholder interviews &amp; competitive
+                                    analysis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-[200px] relative">
+                            <div
+                                class="h-1 bg-slate-200 dark:bg-slate-800 absolute top-4 left-0 right-0 z-0"
+                            ></div>
+                            <div class="relative z-10 space-y-4">
+                                <div
+                                    class="size-8 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold ring-8 ring-background-light dark:ring-background-dark"
+                                >
+                                    2
+                                </div>
+                                <h5 class="font-bold">Ideation</h5>
+                                <p class="text-xs text-slate-500">
+                                    User flows, information architecture &amp;
+                                    wireframing.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-[200px] relative">
+                            <div
+                                class="h-1 bg-slate-200 dark:bg-slate-800 absolute top-4 left-0 right-0 z-0"
+                            ></div>
+                            <div class="relative z-10 space-y-4">
+                                <div
+                                    class="size-8 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold ring-8 ring-background-light dark:ring-background-dark"
+                                >
+                                    3
+                                </div>
+                                <h5 class="font-bold">Execution</h5>
+                                <p class="text-xs text-slate-500">
+                                    High-fidelity UI design &amp; visual
+                                    systems.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-[200px] relative">
+                            <div
+                                class="h-1 bg-slate-200 dark:bg-slate-800 absolute top-4 left-0 right-0 z-0"
+                            ></div>
+                            <div class="relative z-10 space-y-4">
+                                <div
+                                    class="size-8 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold ring-8 ring-background-light dark:ring-background-dark"
+                                >
+                                    4
+                                </div>
+                                <h5 class="font-bold">Testing</h5>
+                                <p class="text-xs text-slate-500">
+                                    Usability testing &amp; iterative feedback
+                                    loops.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Visual System -->
+            <section
+                class="p-8 rounded-2xl bg-slate-800/50 border border-slate-700"
+            >
+                <h2 class="text-3xl font-bold mb-12">Visual Identity</h2>
+                <div class="grid lg:grid-cols-2 gap-16">
+                    <div>
+                        <h3
+                            class="text-sm font-bold uppercase tracking-widest text-slate-500 mb-6"
+                        >
+                            Color Palette
+                        </h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="space-y-2">
+                                <div
+                                    class="h-20 rounded-xl bg-primary shadow-lg shadow-primary/20"
+                                ></div>
+                                <p class="text-xs font-mono">#0D59F2</p>
+                            </div>
+                            <div class="space-y-2">
+                                <div
+                                    class="h-20 rounded-xl bg-[#101622] border border-slate-700"
+                                ></div>
+                                <p class="text-xs font-mono">#101622</p>
+                            </div>
+                            <div class="space-y-2">
+                                <div
+                                    class="h-20 rounded-xl bg-emerald-500"
+                                ></div>
+                                <p class="text-xs font-mono">#10B981</p>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="h-20 rounded-xl bg-slate-400"></div>
+                                <p class="text-xs font-mono">#94A3B8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3
+                            class="text-sm font-bold uppercase tracking-widest text-slate-500 mb-6"
+                        >
+                            Typography
+                        </h3>
+                        <div class="space-y-4">
+                            <p class="text-4xl font-black">Inter Bold</p>
+                            <p class="text-2xl font-medium">Inter Medium</p>
+                            <p class="text-lg text-slate-500">
+                                Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp
+                                Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz 1234567890
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Key Features Section -->
+            <section class="mb-32 space-y-32">
+                <!-- Feature 1 -->
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 lg:order-1">
+                        <div
+                            class="rounded-2xl overflow-hidden shadow-2xl bg-slate-900 ring-1 ring-white/10"
+                        >
+                            <img
+                                class="w-full aspect-square object-cover"
+                                data-alt="Detailed UI of the scanning feature"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq4uRddS2WsaasVDoFRNLUE7rxalvQSCSHwgoWI7LMeOmMGv4_3TYylH3pECO9PN6p1vcI18q4U6lWbEL88u42aCinasw4YADFYI1MM8_2p-Z5g5Wpa2VhKJyrpdFVeJRbDIsMjcpU1UHSZ4ySyWF64Q8tyvXOdv_qhL9b97Y68OX03m7YFrMxFJC2kSCTbz_6Vv5DAw4gkq_JIIbriKyAfQmqXAER0z_6L9XazfyxcoM-EvZftPSi7BEPXHhAonjjBzvmYEWt4hh3"
+                            />
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2 space-y-6">
+                        <span class="text-primary font-bold">Feature 01</span>
+                        <h3 class="text-4xl font-bold">
+                            Seamless API Integration
+                        </h3>
+                        <p
+                            class="text-slate-600 dark:text-slate-400 leading-relaxed"
+                        >
+                            We connected directly with major banking APIs to
+                            allow for automatic purchase categorization. Users
+                            don't need to manually enter data; the app learns
+                            their habits and provides real-time impact
+                            assessments as they spend.
+                        </p>
+                        <ul class="space-y-3">
+                            <li
+                                class="flex items-center gap-2 text-sm font-medium"
+                            >
+                                <span
+                                    class="material-symbols-outlined text-primary"
+                                    >verified</span
+                                >
+                                99% accuracy in merchant categorization
+                            </li>
+                            <li
+                                class="flex items-center gap-2 text-sm font-medium"
+                            >
+                                <span
+                                    class="material-symbols-outlined text-primary"
+                                    >verified</span
+                                >
+                                Secure OAuth 2.0 banking protocols
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="space-y-6">
+                        <span class="text-primary font-bold">Feature 02</span>
+                        <h3 class="text-4xl font-bold">
+                            Smart Substitution Engine
+                        </h3>
+                        <p
+                            class="text-slate-600 dark:text-slate-400 leading-relaxed"
+                        >
+                            Instead of just showing the damage, we focused on
+                            the solution. Our recommendation engine suggests
+                            local, sustainable alternatives for frequently
+                            purchased items, calculating exactly how much CO2
+                            the user could save.
+                        </p>
+                        <div
+                            class="p-4 rounded-xl bg-primary/10 border border-primary/20 italic text-sm"
+                        >
+                            "The substitution feature alone helped me reduce my
+                            footprint by 15% in the first month." — Beta User
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="rounded-2xl overflow-hidden shadow-2xl bg-slate-900 ring-1 ring-white/10"
+                        >
+                            <img
+                                class="w-full aspect-square object-cover"
+                                data-alt="Mockup of the smart substitution screen"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSfIQ0LDJ14cxI547xQ2nckna_y-C6RlnEpjRnf4_r8kCIWoRn-bMbqD3vBLLCWPJi9UR5P6ahCE0y6fNDf4jLYinHeOuv2hid7pHjY_nyNr9U0WelIwmsE5wPiK1tBtSFwQ1B3OX9K6e2Q8O_TYYwCcrVD5Vgyx-S_UG9ZhRTOKb_N0gUecLwMczNg0wHLsJ_aTfcGVRL7vyEZ861V_YIo0kIXLgJH3_a9TeGQ1DEg3HpXmbJpp9vy6KS2tOAbhkHWehw6u2doSCu"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Results & Impact -->
+            <section
+                class="mb-32 py-16 px-8 rounded-3xl bg-primary text-white text-center"
+            >
+                <h2 class="text-3xl font-bold mb-16">Results &amp; Impact</h2>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="space-y-2">
+                        <p class="text-5xl font-black">4.8</p>
+                        <p class="text-sm font-medium opacity-80">
+                            App Store Rating
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-5xl font-black">1.2M</p>
+                        <p class="text-sm font-medium opacity-80">
+                            CO2 Tons Saved
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-5xl font-black">65%</p>
+                        <p class="text-sm font-medium opacity-80">
+                            User Retention
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-5xl font-black">200k</p>
+                        <p class="text-sm font-medium opacity-80">
+                            Active Users
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Next Project Navigation -->
+            <section
+                class="mb-12 border-t border-slate-200 dark:border-slate-800 pt-16"
+            >
+                <div
+                    class="flex flex-col md:flex-row justify-between items-center gap-8"
+                >
+                    <div class="space-y-2">
+                        <p
+                            class="text-sm font-bold text-slate-500 uppercase tracking-widest"
+                        >
+                            Next Project
+                        </p>
+                        <a href="project01.html">
+                            <h3
+                                class="text-4xl font-bold hover:text-primary transition-colors cursor-pointer"
+                            >
+                                Employee communications experience
+                            </h3>
+                        </a>
+                    </div>
+                    <a href="project01.html">
+                        <div class="relative group cursor-pointer">
+                            <div
+                                class="w-64 h-40 rounded-md overflow-hidden ring-1 ring-slate-200 dark:ring-slate-800 transition-all group-hover:scale-105"
+                            >
+                                <img
+                                    class="w-full h-full object-cover"
+                                    data-alt="Preview of the next project dashboard"
+                                    src="images/project01/mobileThumbnail.webp"
+                                />
+                                <div
+                                    class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+                                >
+                                    <span
+                                        class="material-symbols-outlined text-white text-4xl"
+                                        >arrow_forward</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer-component></footer-component>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const themeToggleBtn = document.getElementById("theme-toggle");
+                const htmlElement = document.documentElement;
+
+                themeToggleBtn.addEventListener("click", () => {
+                    if (htmlElement.classList.contains("dark")) {
+                        htmlElement.classList.remove("dark");
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        htmlElement.classList.add("dark");
+                        localStorage.setItem("theme", "dark");
+                    }
+                });
+
+                // Check for saved theme preference
+                if (localStorage.getItem("theme") === "light") {
+                    htmlElement.classList.remove("dark");
+                }
+            });
+        </script>
+    </body>
+</html>
