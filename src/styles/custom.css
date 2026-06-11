@@ -1,0 +1,94 @@
+:root {
+  color-scheme: light;
+  --focus-ring: #227a0c;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+html {
+  scroll-padding-top: 7rem;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+.glass-nav {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 9999;
+  transform: translateY(-150%);
+  border-radius: 1rem;
+  background: #ffffff;
+  color: #101622;
+  padding: 0.75rem 1rem;
+  font-weight: 800;
+  box-shadow: 0 18px 45px -25px rgba(15, 23, 42, 0.55);
+  transition: transform 150ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 600, 'GRAD' 0, 'opsz' 24;
+  line-height: 1;
+  vertical-align: -0.15em;
+}
+
+[hidden],
+.hidden[hidden] {
+  display: none !important;
+}
+
+:focus-visible {
+  outline-color: var(--focus-ring);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.case-nav-link[aria-current="location"] {
+  background: rgba(34, 122, 12, 0.1);
+  color: #227a0c;
+  font-weight: 800;
+}
+
+.dark .case-nav-link[aria-current="location"] {
+  background: rgba(74, 222, 128, 0.12);
+  color: #86efac;
+}
+
+/* Force single-icon states for theme and mobile-navigation controls.
+   These rules intentionally avoid relying on utility order. */
+.data-theme-icon-light.hidden,
+.data-theme-icon-dark.hidden,
+.data-menu-icon-open.hidden,
+.data-menu-icon-close.hidden,
+.data-theme-icon-light[hidden],
+.data-theme-icon-dark[hidden],
+.data-menu-icon-open[hidden],
+.data-menu-icon-close[hidden] {
+  display: none !important;
+}
